@@ -1,0 +1,175 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'ctap2'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=ctap2"
+                ],
+                "filter": {
+                    "name": "ctap2",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'ctap2'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=ctap2",
+                    "--package=ctap2"
+                ],
+                "filter": {
+                    "name": "ctap2",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'ctap2'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=ctap2",
+                    "--package=ctap2"
+                ],
+                "filter": {
+                    "name": "ctap2",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'oom_test'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=oom_test",
+                    "--package=ctap2"
+                ],
+                "filter": {
+                    "name": "oom_test",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'oom_test'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=oom_test",
+                    "--package=ctap2"
+                ],
+                "filter": {
+                    "name": "oom_test",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'crypto_bench'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=crypto_bench",
+                    "--package=ctap2"
+                ],
+                "filter": {
+                    "name": "crypto_bench",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'crypto_bench'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=crypto_bench",
+                    "--package=ctap2"
+                ],
+                "filter": {
+                    "name": "crypto_bench",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'panic_test'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=panic_test",
+                    "--package=ctap2"
+                ],
+                "filter": {
+                    "name": "panic_test",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'panic_test'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=panic_test",
+                    "--package=ctap2"
+                ],
+                "filter": {
+                    "name": "panic_test",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
