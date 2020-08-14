@@ -1,5 +1,8 @@
+use std::fmt;
+
 #[allow(non_camel_case_types)]
 #[allow(dead_code)]
+#[derive(Debug)]
 pub enum Ctap2StatusCode {
     CTAP2_OK = 0x00,
     CTAP1_ERR_INVALID_COMMAND = 0x01,
@@ -57,4 +60,13 @@ pub enum Ctap2StatusCode {
     CTAP2_ERR_VENDOR_INTERNAL_ERROR = 0xF2,
 
     CTAP2_ERR_VENDOR_LAST = 0xFF,
+}
+
+impl fmt::Display for Ctap2StatusCode {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match *self {
+            Ctap2StatusCode::CTAP2_OK => write!(f,"CTAP2_OK"),
+            _ => write!(f,"err"),
+        }        
+    }
 }

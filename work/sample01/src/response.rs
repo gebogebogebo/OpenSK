@@ -1,4 +1,5 @@
 #[cfg(feature = "with_ctap2_1")]
+
 use super::data_formats::{AuthenticatorTransport, PublicKeyCredentialParameter};
 
 #[cfg_attr(test, derive(PartialEq))]
